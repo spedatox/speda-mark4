@@ -1,6 +1,6 @@
 # Speda Mark IV
 
-**Recovered February 2025 — Archived June 2026**
+**Built in February 2025 — RecoveredJune 2026**
 
 The fourth iteration of SPEDA (Specialized Personal Executive Digital Assistant), built in Flutter/Dart.
 
