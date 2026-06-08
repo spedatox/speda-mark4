@@ -1,0 +1,33 @@
+name: speda
+description: Speda Mark IV — Personal AI Assistant (February 2025)
+version: 4.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  http: ^1.2.0
+  flutter_markdown: ^0.6.18
+  flutter_spinkit: ^5.2.0
+  file_picker: ^6.1.1
+  firebase_core: ^2.24.0
+  firebase_auth: ^4.15.0
+  google_sign_in: ^6.2.1
+  googleapis: ^11.4.0
+  googleapis_auth: ^1.4.1
+  flutter_local_notifications: ^16.3.0
+  timezone: ^0.9.2
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/fonts/
+  fonts:
+    - family: Logirent
+      fonts:
+        - asset: assets/fonts/Logirent.ttf
+    - family: Azbuka
+      fonts:
+        - asset: assets/fonts/Azbuka.ttf
