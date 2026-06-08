@@ -1,27 +1,6 @@
-import 'package:flutter/material.dart';
-import 'package:firebase_core/firebase_core.dart';
-import 'package:timezone/data/latest.dart' as tz;
-import 'screens/chat_screen.dart';
+// ⚠️ DO NOT COMMIT REAL API KEYS
+// Replace with your actual keys before running
 
-void main() async {
-  WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp();
-  tz.initializeTimeZones();
-  runApp(const SpedaApp());
-}
-
-class SpedaApp extends StatelessWidget {
-  const SpedaApp({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Speda',
-      debugShowCheckedModeBanner: false,
-      theme: ThemeData.dark().copyWith(
-        scaffoldBackgroundColor: const Color(0xFF0A0D10),
-      ),
-      home: const ChatScreen(),
-    );
-  }
-}
+const String GoogleApiKey = 'YOUR_GOOGLE_API_KEY';
+const String googleSearchCx = 'YOUR_CUSTOM_SEARCH_ENGINE_ID';
+const String openAIAPIKey = 'YOUR_OPENAI_API_KEY';
