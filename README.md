@@ -1,36 +1,45 @@
 # Speda Mark IV
 
-**Built in February 2025 — RecoveredJune 2026**
+**Built in February 2025 — Recovered June 2026**
 
-The fourth iteration of SPEDA (Specialized Personal Executive Digital Assistant), built in Flutter/Dart.
+The fourth iteration of SPEDA (Specialized Personal Executive Digital Assistant), built as a mobile-first personal AI assistant using Flutter and Dart.
 
-## What This Was
+## Features
 
-A mobile-first personal AI assistant with:
-- GPT-4o-mini powered chat
-- Google Calendar integration (list, add, summarize events)
-- Firebase Authentication with Google Sign In
-- Web search via Google Custom Search API
-- Image attachment and analysis
-- Local push notifications for calendar events
-- Dark blue UI with custom Logirent/Azbuka fonts
+- **Conversational AI**: Powered by the GPT-4o-mini model.
+- **Google Calendar Integration**: List, add, and summarize upcoming events.
+- **Authentication**: Secure Firebase Authentication with Google Sign-In.
+- **Web Search**: Integrated web search via Google Custom Search API.
+- **Image Support**: Image attachment and analysis capabilities.
+- **Local Push Notifications**: Reminders for calendar events.
+- **Custom UI**: Dark blue theme featuring custom Logirent and Azbuka fonts.
 
-## Architecture (Such As It Was)
+## Architecture & History
 
-Everything lived in two files:
-- `lib/screens/openai_service.dart` — all backend logic
-- `lib/screens/chat_screen.dart` — all UI
+In this iteration, the project architecture was highly centralized:
+- `lib/screens/openai_service.dart` handles all backend and API logic.
+- `lib/screens/chat_screen.dart` contains the complete user interface.
 
-This is what Mark VI fixed.
+*Note: This structural approach was revised and improved in Mark VI.*
 
-## Setup
+## Project Lineage
 
-1. Add your API keys to `lib/screens/secrets.dart`
-2. Configure Firebase (add `google-services.json` for Android / `GoogleService-Info.plist` for iOS)
-3. Add your custom fonts to `assets/fonts/`
-4. Run `flutter pub get`
-5. Run `flutter run`
+Mark I ➔ Mark II ➔ *(Mark III lost)* ➔ **Mark IV (this repository)** ➔ Mark V ➔ Mark VI
 
-## Lineage
+## Setup Instructions
 
-Mark I → Mark II → *(Mark III lost)* → **Mark IV (this)** → Mark V → Mark VI
+To run this application locally:
+
+1. **API Keys**: Add your API keys to `lib/screens/secrets.dart`.
+2. **Firebase Configuration**: 
+   - For Android, add `google-services.json` to the correct Android directory.
+   - For iOS, add `GoogleService-Info.plist` to the correct iOS directory.
+3. **Assets**: Ensure your custom fonts are placed in `assets/fonts/`.
+4. **Install Dependencies**:
+   ```bash
+   flutter pub get
+   ```
+5. **Run the App**:
+   ```bash
+   flutter run
+   ```
